@@ -21,11 +21,11 @@ string findPalindrome(string s, int left, int right)
     int n = s.size();
     int l = left;
     int r = right;
-    while (left>=0 && right<=n-1 && s[left] == s[right]) {
-        left--;
-        right++;
+    while (l>=0 && r<=n-1 && s[l] == s[r]) {
+        l--;
+        r++;
     }
-    return s.substr(left+1, right-left-1);
+    return s.substr(l+1, r-l-1);
 }
 
 
